@@ -3,4 +3,117 @@
   --second-color: #757575;
   --accent-color: #2196f3;
   --white-color: #fff;
+  --bg-dark: #2f303a;
+}
+/*========== common =========== */
+body {
+  color: var(--main-color);
+  /* color: lightseagreen; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 36px;
+}
+
+/* =========== Logo =============== */
+.logo {
+  font-size: 31px;
+  color: var(--main-color);
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+/* ============== header ============= */
+.header-nav a {
+  font-size: 14px;
+  color: var(--main-color);
+}
+
+.header-contacts a {
+  font-size: 14px;
+  color: var(--second-color);
+}
+
+.header-nav a:focus,
+.header-nav a:hover,
+.header-contacts a:focus,
+.header-contacts a:hover {
+  color: var(--accent-color);
+}
+/* ============ hero ================ */
+.hero {
+  background-color: var(--bg-dark);
+}
+
+.hero-title {
+  font-size: 44px;
+  color: var(--white-color);
+}
+
+.hero button {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 16px;
+}
+
+.hero button:hover {
+  background-color: #188ce8;
+}
+
+/* ============ features =============== */
+.feature-title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.feature-text {
+  font-size: 14px;
+  color: var(--second-color);
+}
+
+/* ============= our team =============== */
+.members {
+  background-color: #f5f4fa;
+}
+.members .member-name {
+  font-size: 16px;
+}
+.members .member-function {
+  font-size: 16px;
+  color: var(--second-color);
+}
+
+/* ============ footer ================ */
+footer {
+  background-color: var(--bg-dark);
+}
+
+footer .logo {
+  color: var(--white-color);
+}
+
+.contacts-list {
+  font-size: 14px;
+  color: gold;
+}
+.contact-map {
+  color: rgba(255, 255, 255, 1);
+}
+.contact-email,
+.contact-phone {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-list a:focus,
+.contacts-list a:hover {
+  color: var(--accent-color);
 }
