@@ -7,8 +7,12 @@
 }
 /*========== common =========== */
 body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
   color: var(--main-color);
-  /* color: lightseagreen; */
+  letter-spacing: 0.03em;
+
+  background-color: var(--white-color);
 }
 
 ul {
@@ -21,11 +25,16 @@ a {
 
 .section-title {
   font-size: 36px;
+  font-weight: 700;
+  line-height: 1.67;
+  text-align: center;
 }
 
 /* =========== Logo =============== */
 .logo {
-  font-size: 31px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
   color: var(--main-color);
 }
 
@@ -36,11 +45,17 @@ a {
 /* ============== header ============= */
 .header-nav a {
   font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--main-color);
 }
 
 .header-contacts a {
   font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--second-color);
 }
 
@@ -57,13 +72,21 @@ a {
 
 .hero-title {
   font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
   color: var(--white-color);
 }
 
 .hero button {
   background-color: var(--accent-color);
-  color: #fff;
+
   font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #fff;
 }
 
 .hero button:hover {
@@ -71,12 +94,18 @@ a {
 }
 
 /* ============ features =============== */
+.hidden {
+  color: gold;
+}
+
 .feature-title {
   font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 .feature-text {
-  font-size: 14px;
+  line-height: 1.71;
   color: var(--second-color);
 }
 
@@ -86,10 +115,17 @@ a {
 }
 .members .member-name {
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+
+  text-align: center;
 }
 .members .member-function {
   font-size: 16px;
   color: var(--second-color);
+  line-height: 1.19;
+
+  text-align: center;
 }
 
 /* ============ footer ================ */
@@ -101,19 +137,49 @@ footer .logo {
   color: var(--white-color);
 }
 
-.contacts-list {
-  font-size: 14px;
-  color: gold;
+address {
+  font-style: normal;
 }
 .contact-map {
   color: rgba(255, 255, 255, 1);
+  line-height: 1.71;
 }
 .contact-email,
 .contact-phone {
   color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
 }
 
 .contacts-list a:focus,
 .contacts-list a:hover {
   color: var(--accent-color);
+}
+
+/* =============== portfolio ================== */
+.portfolio .filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  background-color: #f5f4fa;
+}
+
+.portfolio .filter-button:focus,
+.portfolio .filter-button:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.card .card-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+.card .card-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--second-color);
 }
