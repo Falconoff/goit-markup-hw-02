@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --white-color: #fff;
   --bg-dark: #2f303a;
+  --btn-hover: #188ce8;
 }
 
 /*========== common =========== */
@@ -44,7 +45,7 @@ a {
 }
 
 /* ============== header ============= */
-.header-nav a {
+.header-nav .link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -52,7 +53,11 @@ a {
   color: var(--main-color);
 }
 
-.header-contacts a {
+.header-nav .current {
+  color: var(--accent-color);
+}
+
+.header-contacts .link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -60,10 +65,10 @@ a {
   color: var(--second-color);
 }
 
-.header-nav a:focus,
-.header-nav a:hover,
-.header-contacts a:focus,
-.header-contacts a:hover {
+.header-nav .link:focus,
+.header-nav .link:hover,
+.header-contacts .link:focus,
+.header-contacts .link:hover {
   color: var(--accent-color);
 }
 
@@ -81,24 +86,34 @@ a {
   color: var(--white-color);
 }
 
-.hero button {
+.hero .btn {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #fff;
+  color: var(--white-color);
 
   background-color: var(--accent-color);
   cursor: pointer;
 }
 
-.hero button:hover {
-  background-color: #188ce8;
+.hero .btn:hover {
+  background-color: var(--btn-hover);
 }
 
 /* ============ features =============== */
-.hidden {
-  color: gold;
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .feature-title {
@@ -157,8 +172,8 @@ address {
   line-height: 1.71;
 }
 
-.contacts-list a:focus,
-.contacts-list a:hover {
+.contacts-list .link:focus,
+.contacts-list .link:hover {
   color: var(--accent-color);
 }
 
